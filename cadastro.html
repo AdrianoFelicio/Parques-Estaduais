@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nova Comunicação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logos">
+        <span>IMA</span>
+        <span>UC SC</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="#">Sobre o Projeto</a>
+        <a href="#">Contato</a>
+      </nav>
+      <a href="#" class="btn">Enviar Mensagem</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      Início > Comunicações > <strong>Nova Comunicação</strong>
+    </div>
+
+    <div class="cadastro-layout">
+      <div class="cadastro-banner">
+        <img src="Imagem sua participação.png" alt="imagem-participação">
+      </div>
+
+      <div>
+        <h2 style="color: var(--primary-green); margin-bottom: 20px;">Enviar nova comunicação</h2>
+        <form action="#" method="POST">
+          
+          <div class="form-group">
+            <label for="titulo">Título da comunicação *</label>
+            <input type="text" id="titulo" placeholder="Digite o título da comunicação" required>
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição detalhada *</label>
+            <textarea id="descricao" rows="5" placeholder="Descreva detalhadamente sua comunicação" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail do comunicante *</label>
+            <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="unidade">Unidade de conservação *</label>
+            <select id="unidade" required>
+              <option value="">Selecione uma unidade</option>
+              <option value="acarai">Parque Estadual Acaraí</option>
+              <option value="canoas">Parque Estadual Rio Canoas</option>
+              <option value="vermelho">Parque Estadual Rio Vermelho</option>
+              <option value="serra">Parque Estadual Serra Funda</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <a href="detalhes.html" class="btn btn-outline">Cancelar</a>
+            <button type="submit" class="btn">Enviar Comunicação</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="logos">UC SC</div>
+      <p>2026 - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
